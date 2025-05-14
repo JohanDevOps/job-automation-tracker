@@ -1,0 +1,18 @@
+# Core automation and data handling
+pandas
+python-dotenv
+openpyxl
+
+# AI and API integration
+openai
+requests
+
+# Outlook integration
+O365
+
+# Streamlit dashboard
+streamlit
+
+# Optional enhancements
+schedule       # for recurring tasks/reminders
+pyyaml         # config support if needed

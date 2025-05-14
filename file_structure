@@ -1,0 +1,32 @@
+job-automation-app/
+│
+├── main.py                  # Main runner for the app
+├── job_scraper.py           # Handles job scraping logic
+├── tracker.py               # Job application tracking
+├── reminder.py              # Follow-up reminders
+├── notes.py                 # Research notes manager
+├── email_integration.py     # Outlook integration
+├── ai_helper.py          # AI-powered insights (OpenAI API)
+├── dashboard.py             # Streamlit dashboard
+│
+├── config.py                # API keys and constants
+├── requirements.txt         # Python dependencies
+├── README.md                # Project overview
+└── data/
+    └── applications.json    # Stores job application data
+
+edits for scraper.py
+✅ What it does:
+Returns a list of mock job postings based on criteria like salary and location.
+Filters out jobs below your minimum salary requirement.
+It includes key fields like status, notes, and cover_letter_sent so that downstream components can manage and track these jobs properly.
+🔧 Future Improvement:
+Replace the mock data with actual job board API integration (e.g., Indeed, Remote OK, or Greenhouse).
+You could use libraries like:
+requests + BeautifulSoup for scraping
+selenium for dynamic pages
+
+for ai_helper
+Environment Variable Required
+Be sure to set your API key in your terminal or .env file before running:
+export OPENAI_API_KEY=your-api-key-here
